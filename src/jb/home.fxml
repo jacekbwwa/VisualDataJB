@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+ 
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="ExternalAnchorPane" fx:id="ExternalAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="885.0" styleClass="FxmlCl" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jb.HomeController">
+   <children>
+      <HBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0">
+         <children>
+            <MenuBar minWidth="-Infinity" prefHeight="29.0" prefWidth="335.0" HBox.hgrow="ALWAYS">
+              <menus>
+                  <Menu mnemonicParsing="false" text="NCI, Science in Computing, Software Development, Project, Jacek Byzdra, 2016 " />
+                  <Menu fx:id="adm" mnemonicParsing="false" visible="false" />
+              </menus>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </MenuBar>
+            <MenuBar fx:id="userMenuBar" layoutX="719.0" maxWidth="190.0" minWidth="-Infinity" prefHeight="29.0" HBox.hgrow="SOMETIMES">
+              <menus>
+                <Menu fx:id="userMenu" mnemonicParsing="false" text="UserName">
+                  <items>
+                        <MenuItem fx:id="menuLogout" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="43.0" layoutY="35.0" prefHeight="453.0" prefWidth="801.0" AnchorPane.bottomAnchor="355.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="831.0" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="135.0" text="Integer (1-1000)" textFill="#008cff">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Separator fx:id="separator7" orientation="VERTICAL" prefHeight="200.0" />
+                  <TextField fx:id="textFieldSortInt" alignment="CENTER" prefHeight="27.0" prefWidth="80.0" text="120">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Separator fx:id="separator8" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="generateBtn" mnemonicParsing="false" onAction="#handleButtonGenerate" prefHeight="27.0" prefWidth="161.0" styleClass="backgroundBi" stylesheets="@style.css" text="Generate Data">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Separator fx:id="separator1" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="goToHome" mnemonicParsing="false" onAction="#goToHome" prefHeight="27.0" prefWidth="161.0" styleClass="backgroundBi" stylesheets="@style.css" text="Home">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="labelTimer" prefWidth="160.0" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="#008cff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="ALGORITHMS" textAlignment="CENTER" textOrigin="CENTER">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="321.0" prefWidth="801.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="801.0" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="bubbleSortBtn" mnemonicParsing="false" onAction="#bubbleSorting" styleClass="backgroundBd" stylesheets="@style.css" text="Bubble Sort">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Separator fx:id="separator2" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="insertionSortBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#insertionSorting" styleClass="backgroundBd" stylesheets="@style.css" text="Insertion Sort" />
+                  <Separator fx:id="separator3" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="selectionSortBtn" layoutX="88.0" layoutY="10.0" mnemonicParsing="false" onAction="#selectionSorting" styleClass="backgroundBd" stylesheets="@style.css" text="Selection Sort" />
+                  <Separator fx:id="separator4" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="mergeSortBtn" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#mergeSortingData" styleClass="backgroundBd" stylesheets="@style.css" text="Merge Sort" />
+                  <Separator fx:id="separator5" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="quickSortBtn" layoutX="244.0" layoutY="10.0" mnemonicParsing="false" onAction="#quickSortingData" styleClass="backgroundBd" stylesheets="@style.css" text="Quick Sort" />
+                  <Separator fx:id="separator6" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="notVisibleBtn" layoutX="322.0" layoutY="10.0" mnemonicParsing="false" text="NotVisible" />
+               </children>
+            </HBox>
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+            <SplitPane fx:id="drawPane" dividerPositions="0.7430972388955582" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <BarChart fx:id="barChart" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+<AnchorPane fx:id="window" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="885.0" styleClass="UpperHBox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jb.WelcomeController">
+   <children>
+      <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <MenuBar minWidth="-Infinity" prefHeight="29.0" prefWidth="335.0" HBox.hgrow="ALWAYS">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="NCI, Science in Computing, Software Development, Project, Jacek Byzdra, 2016" />
+                    </menus>
+                  </MenuBar>
+                  <MenuBar fx:id="userMenuBar" layoutX="719.0" maxWidth="190.0" minWidth="-Infinity" prefHeight="29.0" HBox.hgrow="SOMETIMES">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="Full Screen">
+                          <items>
+                            <MenuItem id="fullscreen" fx:id="fullscreen" mnemonicParsing="false" onAction="#fullscreen" text="Fullscreen" />
+                          </items>
+                        </Menu>
+                     </menus></MenuBar>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+	  <!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+      <StackPane fx:id="stackPane2" prefHeight="80.0" prefWidth="885.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+      <StackPane fx:id="stackPaneMiddle" prefHeight="80.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+         <children>
+            <Button fx:id="welcomeBtn" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="80.0" text="Enter" />
+         </children>
+      </StackPane>
+      <StackPane prefHeight="280.0" prefWidth="885.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="anchorDown" prefHeight="280.0" prefWidth="885.0">
+               <children>
+                  <StackPane fx:id="stackPaneDown" layoutX="173.0" prefHeight="260.0" prefWidth="540.0" AnchorPane.bottomAnchor="0.0" />
+               </children></AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
+
+
+
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->

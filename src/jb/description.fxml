@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+ 
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+ 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass=".backgroundAo{" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jb.DescriptionController">
+   <children>
+      <StackPane prefHeight="80.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnCloseClick" prefHeight="40.0" prefWidth="80.0" text="Close" textAlignment="CENTER" />
+         </children>
+      </StackPane>
+      <AnchorPane prefHeight="333.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="labelDescription" layoutX="104.0" layoutY="67.0" prefHeight="124.0" prefWidth="393.0" text="LabelDescription" wrapText="true" />
+            <Label fx:id="labelAuthor" layoutX="104.0" layoutY="216.0" prefHeight="59.0" prefWidth="424.0" text="LabelAuthor" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

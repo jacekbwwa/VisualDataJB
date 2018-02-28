@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+ 
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="ExternalAnchorPane" fx:id="ExternalAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="885.0" styleClass="FxmlCl" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jb.MenuController">
+   <children>
+      <HBox fx:id="upperHBox" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0">
+         <children>
+            <MenuBar minWidth="-Infinity" prefHeight="29.0" prefWidth="335.0" HBox.hgrow="ALWAYS">
+              <menus>
+                  <Menu mnemonicParsing="false" text="NCI, Science in Computing, Software Development, Project, Jacek Byzdra, 2016 " />
+                  <Menu fx:id="adm" mnemonicParsing="false" visible="false" />
+              </menus>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </MenuBar>
+            <MenuBar fx:id="userMenuBar" layoutX="719.0" maxWidth="190.0" minWidth="-Infinity" prefHeight="29.0" HBox.hgrow="SOMETIMES">
+              <menus>
+                <Menu fx:id="userMenu" mnemonicParsing="false" text="UserName">
+                  <items>
+                        <MenuItem fx:id="adminBtnMenu" mnemonicParsing="false" onAction="#handleAdministrationPanel" text="Administration panel" visible="false" />
+                        <MenuItem fx:id="logoutBtnM" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="43.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="453.0" prefWidth="801.0" AnchorPane.bottomAnchor="355.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="#008cff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="ALGORITHMS" textAlignment="CENTER" textOrigin="CENTER">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="150.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="55.0" prefWidth="371.0">
+                     <children>
+                        <Button fx:id="quizBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleQuizBtn" prefHeight="30.0" prefWidth="160.0" styleClass="backgroundBi" stylesheets="@style.css" text="Quiz" />
+                        <Separator fx:id="separator1" orientation="VERTICAL" prefHeight="1.0" prefWidth="50.0" />
+                        <Button fx:id="descriptionBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleDescriptionBtn" prefHeight="30.0" prefWidth="160.0" styleClass="backgroundBi" stylesheets="@style.css" text="Description" />
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="321.0" prefWidth="801.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <HBox fx:id="bottomHBox" prefHeight="100.0" prefWidth="801.0" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator fx:id="separator11" orientation="VERTICAL" prefHeight="200.0">
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                  </Separator>
+                  <MenuButton mnemonicParsing="false" prefWidth="150.0" styleClass="backgroundBd" stylesheets="@style.css" text="Hints">
+                    <items>
+                      <MenuItem fx:id="bubbleSortMenuItem" mnemonicParsing="false" onAction="#handleBubbleSortMenuItem" text="Bubble Sort" />
+                      <MenuItem fx:id="insertionSortMenuItem" mnemonicParsing="false" onAction="#hndleInsertionSortMenuItem" text="Insertion Sort" />
+                        <MenuItem fx:id="selectionSortMenuItem" mnemonicParsing="false" onAction="#handleSelectionMenuItem" text="Selection Sort" />
+                        <MenuItem fx:id="mergeSortMenuItem" mnemonicParsing="false" onAction="#hndleMergeSortMenuItem" text="Merge Sort" />
+                        <MenuItem fx:id="quickSortMenuItem" mnemonicParsing="false" onAction="#hndleQuickSortMenuItem" text="Quick Sort" />
+                        <MenuItem fx:id="treesMenuItem" mnemonicParsing="false" onAction="#hndleBSTMenuItem" text="Trees" />
+                        <MenuItem fx:id="graphsMenuItem" mnemonicParsing="false" onAction="#hndleGraphMenuItem" text="Graphs" />
+                    </items>
+                  </MenuButton>
+                  <Separator fx:id="separator9" orientation="VERTICAL" />
+                  <Button fx:id="notVisibleBtn5" mnemonicParsing="false" prefWidth="50.0" text="NotVisible" />
+                  <Separator fx:id="separator10" orientation="VERTICAL" />
+                  <Button fx:id="sortsBtnMain" mnemonicParsing="false" onAction="#handlesortsBtnBar" prefWidth="150.0" styleClass="backgroundBd" stylesheets="@style.css" text="Sorts Bars">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Separator fx:id="separator7" orientation="VERTICAL" />
+                  <Button fx:id="notVisibleBtn4" mnemonicParsing="false" prefWidth="50.0" text="NotVisible" />
+                  <Separator fx:id="separator8" orientation="VERTICAL" />
+                  <Button fx:id="sortsBtnPanel" mnemonicParsing="false" onAction="#handlesortsBtnPanel" prefWidth="150.0" styleClass="backgroundBd" stylesheets="@style.css" text="Sorts Panels" />
+                  <Separator fx:id="separator2" orientation="VERTICAL">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Separator>
+                  <Button fx:id="notVisibleBtn1" mnemonicParsing="false" prefWidth="50.0" text="NotVisible" />
+                  <Separator fx:id="separator3" orientation="VERTICAL" />
+                  <Button fx:id="treeBSTBTN" mnemonicParsing="false" onAction="#handletreeBSTBtn" prefWidth="150.0" styleClass="backgroundBd" stylesheets="@style.css" text="Trees" />
+                  <Separator fx:id="separator4" orientation="VERTICAL" />
+                  <Button fx:id="notVisibleBtn2" mnemonicParsing="false" prefWidth="50.0" text="NotVisible" />
+                  <Separator fx:id="separator5" orientation="VERTICAL" />
+                  <Button fx:id="graphsBtn" mnemonicParsing="false" onAction="#handlegraphsBtn" prefWidth="150.0" styleClass="backgroundBd" stylesheets="@style.css" text="Graphs" />
+                  <Separator fx:id="separator6" orientation="VERTICAL" />
+                  <Button fx:id="notVisibleBtn3" mnemonicParsing="false" prefWidth="50.0" text="NotVisible" />
+                  <Separator fx:id="separator12" orientation="VERTICAL" prefHeight="200.0">
+                     <padding>
+                        <Insets right="100.0" />
+                     </padding>
+                  </Separator>
+               </children>
+            </HBox>
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+            <SplitPane fx:id="drawPane" dividerPositions="0.30085261875761266, 0.6772228989037758" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="267.0">
+                     <children>
+                        <TextArea fx:id="textAreaLeft" prefHeight="274.0" prefWidth="277.0" styleClass="textAreaCode2" stylesheets="@style.css" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="267.0">
+                     <children>
+                        <TextArea fx:id="textAreaMiddle" prefHeight="274.0" prefWidth="267.0" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="274.0" prefWidth="267.0">
+                     <children>
+                        <TextArea fx:id="textAreaRight" prefHeight="274.0" prefWidth="267.0" styleClass="textAreaCode" stylesheets="@style.css" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

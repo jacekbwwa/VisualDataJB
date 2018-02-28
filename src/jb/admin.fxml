@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * FXML 
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="857.0" prefWidth="736.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jb.AdminController">
+  <tabs>
+    <Tab text="Quiz questions">
+         <content>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="649.0" prefWidth="736.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="736.0">
+                     <children>
+                        <TableView fx:id="tableViewQst" layoutY="142.0" prefHeight="244.0" prefWidth="736.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                              <TableColumn fx:id="nrCol" prefWidth="75.0" text="No." />
+                            <TableColumn fx:id="questionIdCol" prefWidth="75.0" text="Id" visible="false" />
+                            <TableColumn fx:id="questionCol" prefWidth="658.0" text="Question" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="0.0" prefHeight="380.0" prefWidth="736.0" SplitPane.resizableWithParent="false">
+                     <children>
+                        <TextField fx:id="txtQuestion" layoutX="143.0" layoutY="60.0" prefHeight="39.0" prefWidth="578.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="10.0" />
+                        <TextField fx:id="txtAnswerD" layoutX="143.0" layoutY="283.0" prefHeight="39.0" prefWidth="581.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="10.0" />
+                        <TextField fx:id="txtAnswerC" layoutX="143.0" layoutY="229.0" prefHeight="39.0" prefWidth="578.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="10.0" />
+                        <TextField fx:id="txtAnswerB" layoutX="143.0" layoutY="172.0" prefHeight="39.0" prefWidth="578.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="10.0" />
+                        <TextField fx:id="txtAnswerA" layoutX="143.0" layoutY="115.0" prefHeight="39.0" prefWidth="577.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="10.0" />
+                        <Button alignment="TOP_RIGHT" layoutX="459.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleUpdateQuestion" text="Save changes" AnchorPane.rightAnchor="140.0" />
+                        <Button fx:id="btnSaveAsNew" alignment="TOP_RIGHT" layoutX="601.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleInsertQuestion" text="Save as new" AnchorPane.rightAnchor="10.0" />
+                        <Button fx:id="btnDelete" alignment="TOP_RIGHT" layoutX="644.0" layoutY="4.0" mnemonicParsing="false" onAction="#handleDeleteQuestion" text="Delete" AnchorPane.rightAnchor="10.0" />
+                        <Label layoutX="14.0" layoutY="60.0" text="Quiz question: " />
+                        <RadioButton fx:id="rbA" layoutX="10.0" layoutY="121.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="128.0" text="Answer A: " AnchorPane.leftAnchor="10.0" />
+                        <RadioButton fx:id="rbB" layoutX="10.0" layoutY="178.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" text="Answer B: " AnchorPane.leftAnchor="10.0" />
+                        <RadioButton fx:id="rbC" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" text="Answer C:" AnchorPane.leftAnchor="10.0" />
+                        <RadioButton fx:id="rbD" layoutX="9.0" layoutY="289.0" mnemonicParsing="false" text="Answer D:" AnchorPane.leftAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </content>
+    </Tab>
+    <Tab text="Users">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableViewUser" prefHeight="760.0" prefWidth="736.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="colUserNo" prefWidth="75.0" text="No." />
+                      <TableColumn fx:id="colUsername" prefWidth="254.0" text="Username" />
+                        <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="234.0" text="E-mail address" />
+                        <TableColumn fx:id="colAdmin" prefWidth="243.0" text="Admin" />
+                        <TableColumn fx:id="colUserId" prefWidth="75.0" text="Id" visible="false" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="644.0" layoutY="760.0" mnemonicParsing="false" onAction="#handleDeleteUser" text="Delete" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                  <Button layoutX="478.0" layoutY="763.0" mnemonicParsing="false" onAction="#handleUpdateUser" text="Set/Unset Admin" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="100.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
+
+<!--
+ * FXML 
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->

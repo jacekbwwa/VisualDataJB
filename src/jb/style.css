@@ -1,0 +1,346 @@
+/**
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+ */
+/**
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+ */
+
+.root {
+    -fx-background-color: #4EE2EC;
+} 
+
+.borderPane {
+    -fx-background-color: red;
+}
+
+.InternalAnchorPane {
+    -fx-background-color: #38ACEC;
+}
+
+.ExternalAnchorPane {
+
+    -fx-background-image: url("dataflow2.png");
+    -fx-background-size: cover;
+}
+
+.UpperHBox{
+    -fx-background-color: #7D0541;
+}
+
+
+.BottomHBox{
+    -fx-background-color: #7D0541;
+}
+
+.LeftVBox{
+    -fx-background-color: #1569C7;
+}
+.RightVBox{
+    -fx-background-color: #1569C7;
+}
+
+.welcome{
+
+}
+
+
+.backgroundAn {
+    -fx-background-color: linear-gradient(from 0% 100% to 0% 100%, #373636 0%, #505050 100%);
+}
+
+.backgroundAm {
+    -fx-background-color:#32CD32;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.backgroundAl {
+    -fx-background-color: #FF8000;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.backgroundAk {
+    -fx-background-color:#e60000;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.backgroundAj {
+    -fx-background-color:#1E90FF;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.backgroundAi {
+    -fx-background-color: #fff;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundAh {
+    -fx-background-color: #36b8ee;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundAg{
+    -fx-background-color: #fff;
+    -fx-background-radius: 5,4,3,5;
+}
+
+
+
+
+.whitebluetext {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+
+
+.blueish1 {
+    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#5a61af, #51536d),
+        linear-gradient(#e4fbff 0%,#cee6fb 10%, #a5d3fb 50%, #88c6fb 51%, #d5faff 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+}
+
+
+.green1 {
+    -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+
+
+
+
+.greenish2{
+
+    -fx-background-color:linear-gradient(greenyellow , limegreen );
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-padding: 5 30 5 30;
+
+}
+
+
+
+.green2 {
+    -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+
+
+
+
+.backgroundAf {
+    -fx-background-color:#32CD32;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.backgroundAe {
+    -fx-background-color: #FF8000;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.backgroundAd {
+    -fx-background-color:#e60000;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.backgroundAc {
+    -fx-background-color:#1E90FF;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+
+
+.backgroundAb {
+    -fx-background-color: #36b8ee;
+    -fx-background-radius: 5,4,3,5;
+}
+
+
+.backgroundAo{
+    -fx-background-color: #2180B5;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundAp{
+    -fx-background-color: #2180B5;
+    -fx-background-radius: 5,4,3,5;
+}
+
+
+.backgroundAr{
+    -fx-background-color: #4D99C4;
+    -fx-background-radius: 5,4,3,5;
+}
+
+
+.backgroundAs{
+    -fx-background-color: #3494CA;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundAt{
+    -fx-background-color: #ece9d8;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundAu{
+    -fx-background-color: #f2dede;
+    -fx-background-radius: 5,4,3,5;
+}
+
+
+.backgroundBa{
+    -fx-background-color: #A473FA;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundBb{
+    -fx-background-color: #B0E8E2;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundBc{
+    -fx-background-color: #72F29F;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundBd{
+    -fx-background-color: #8EE1FA;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundBe{
+    -fx-background-color: #5600B3;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundBf{
+    -fx-background-color: #80A8FF;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundBg{
+    -fx-background-color: #FFE9A3;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundBh{
+    -fx-background-color: #1D9BC4;
+    -fx-background-radius: 5,4,3,5;
+}
+
+.backgroundBi{
+    -fx-background-color: #00c3ff;
+    -fx-background-radius: 5,4,3,5;
+}
+
+
+
+/**
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+ */
+
+
+.chart-bar {
+    -fx-bar-fill: #22bad9;
+    -fx-background-color: linear-gradient(derive(-fx-bar-fill,-30%), derive(-fx-bar-fill,-40%)),
+        linear-gradient(derive(-fx-bar-fill,80%), derive(-fx-bar-fill, 0%)),
+        linear-gradient(derive(-fx-bar-fill,30%), derive(-fx-bar-fill,-10%));
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+}
+
+.default-color0.chart-bar { -fx-bar-fill: #ff6edd; }
+
+.bar-legend-symbol {
+    -fx-padding: 8px;
+}
+
+
+.FxmlSunny {
+    -fx-background-color: #f1c40f;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+}
+
+.FxmlCl {
+    -fx-background-color: #2c3e50;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+}
+
+
+.ButtonRedWhite{
+    -fx-text-fill: black;
+    -fx-background-radius:10;
+    -fx-background-color: linear-gradient(red 0%, white 100%);
+}
+
+
+.ButtonDark1{
+    -fx-text-fill: white;
+    -fx-background-radius:45;
+    -fx-background-color:
+        linear-gradient(#454545 0%, #757575 100%);
+}
+
+.ButtonWhiteF{
+    -fx-text-fill: black;
+    -fx-background-radius:45;
+    -fx-background-color:
+        linear-gradient(#0066FF 0%, white 100%);;
+}
+
+.ButtonWhiteW{
+    -fx-text-fill: black;
+    -fx-background-radius:10;
+    -fx-background-color: linear-gradient(red 0%, white 100%);
+}
+
+
+.textAreaCode{
+    -fx-font-size: 12px;
+    -fx-font-family: Cambria;
+    -fx-text-fill: #0066FF;
+}
+
+.textAreaCode2{
+    -fx-font-size: 12px;
+    -fx-font-family: Cambria;
+    -fx-text-fill: #0066FF;
+}

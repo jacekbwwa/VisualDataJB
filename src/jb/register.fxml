@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+<GridPane id="gridR" fx:id="gridR" alignment="CENTER" hgap="10.0" styleClass="backgroundAo" stylesheets="@style.css" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jb.RegisterController">
+   <children>
+      <Text id="RegisterTitle" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Text>
+      <Label text="User Name:" textFill="WHITE" GridPane.rowIndex="1" />
+      <TextField fx:id="userName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      
+      <Label layoutX="35.0" layoutY="97.0" text="Password:" textFill="WHITE" GridPane.rowIndex="2" />
+      <PasswordField fx:id="userPassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      
+      <Label layoutX="35.0" layoutY="134.0" text="Confirm Password" textFill="WHITE" GridPane.rowIndex="3" />
+      <PasswordField fx:id="userPasswordConfirm" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      
+      <Label layoutX="35.0" layoutY="165.0" text="E-mail" textFill="WHITE" GridPane.rowIndex="4" />
+      <TextField fx:id="userEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      
+      <Label layoutX="35.0" layoutY="134.0" text="Confirm E-mail" textFill="WHITE" GridPane.rowIndex="5" />
+      <TextField fx:id="userEmailConfirm" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      
+      <HBox alignment="BOTTOM_RIGHT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="bthCancel" mnemonicParsing="false" onAction="#btnCancelClick" text="Cancel" textAlignment="CENTER" />
+            <Button fx:id="btnSignUp" mnemonicParsing="false" onAction="#btnSignUpClick" text="Sign Up" />
+         </children>
+      </HBox>
+      <Text fx:id="loginerror" fill="RED" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+   </children>
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+</GridPane>

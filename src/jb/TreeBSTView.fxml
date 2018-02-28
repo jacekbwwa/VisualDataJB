@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+-->
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="ExternalAnchorPane" fx:id="ExternalAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="885.0" styleClass="FxmlCl" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jb.TreeBSTViewController">
+   <children>
+      <HBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0">
+         <children>
+            <MenuBar minWidth="-Infinity" prefHeight="29.0" prefWidth="335.0" HBox.hgrow="ALWAYS">
+              <menus>
+                  <Menu mnemonicParsing="false" text="NCI, Science in Computing, Software Development, Project, Jacek Byzdra, 2016 " />
+                  <Menu fx:id="adm" mnemonicParsing="false" visible="false" />
+              </menus>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </MenuBar>
+            <MenuBar fx:id="userMenuBar" layoutX="719.0" maxWidth="190.0" minWidth="-Infinity" prefHeight="29.0" HBox.hgrow="SOMETIMES">
+              <menus>
+                <Menu fx:id="userMenu" mnemonicParsing="false" text="UserName">
+                  <items>
+                        <MenuItem fx:id="menuLogout" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="43.0" layoutY="35.0" prefHeight="453.0" prefWidth="801.0" AnchorPane.bottomAnchor="355.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <HBox prefHeight="55.0" prefWidth="403.0" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="199.0" AnchorPane.topAnchor="55.0">
+               <children>
+                  <Button fx:id="generateBtn" mnemonicParsing="false" onAction="#handleButtonGenerate" prefHeight="30.0" prefWidth="161.0" styleClass="backgroundBi" stylesheets="@style.css" text="Generate Data">
+                     <HBox.margin>
+                        <Insets left="25.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Separator fx:id="separator1" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="goToHome" mnemonicParsing="false" onAction="#goToHome" prefHeight="30.0" prefWidth="161.0" styleClass="backgroundBi" stylesheets="@style.css" text="Home">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TextField fx:id="textTreeNodes" alignment="CENTER_RIGHT" layoutX="125.0" layoutY="55.0" prefHeight="30.0" prefWidth="80.0" text="25" />
+            <Label layoutY="61.0" text="Nodes ( 5 - 85 )" textFill="#008cff" />
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="#008cff" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="ALGORITHMS" textAlignment="CENTER" textOrigin="CENTER">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="321.0" prefWidth="801.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="801.0" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator fx:id="separator2" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchInorderBtn" mnemonicParsing="false" onAction="#handleButtonInorder" prefWidth="100.0" styleClass="backgroundBd" stylesheets="@style.css" text="Inorder" />
+            
+                  <Separator fx:id="separator3" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchPostOrderBtn" mnemonicParsing="false" onAction="#handleButtonPostOrder" prefWidth="110.0" styleClass="backgroundBd" stylesheets="@style.css" text="PostOrder" />
+                 
+                  <Separator fx:id="separator4" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchPreOrderBtn" mnemonicParsing="false" onAction="#handleButtonPreOrder" prefWidth="100.0" styleClass="backgroundBd" stylesheets="@style.css" text="PreOrder" />
+                 
+                  <Separator fx:id="separator5" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchRootToLeafBtn" mnemonicParsing="false" onAction="#handleButtonLeaves" prefWidth="80.0" styleClass="backgroundBd" stylesheets="@style.css" text="Leaves" />
+                  
+                  <Separator fx:id="separator6" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchMaxValueBtn" mnemonicParsing="false" onAction="#handleButtonMaxValue" styleClass="backgroundBd" stylesheets="@style.css" text="Max" />
+                  <Separator fx:id="separator7" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchMinValueBtn" mnemonicParsing="false" onAction="#handleButtonMinValue" styleClass="backgroundBd" stylesheets="@style.css" text="Min" />
+                  <Separator fx:id="separator8" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchTreeHeightBtn" mnemonicParsing="false" onAction="#handleButtonTreeHeight" styleClass="backgroundBd" stylesheets="@style.css" text="Height" />
+                  <Separator fx:id="separator9" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchTreeSizeBtn" mnemonicParsing="false" onAction="#handleButtonTreeSize" styleClass="backgroundBd" stylesheets="@style.css" text="Size" />
+                  <Separator fx:id="separator10" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="searchTreeDepthBtn" mnemonicParsing="false" onAction="#handleButtonTreeDepth" styleClass="backgroundBd" stylesheets="@style.css" text="Depth" />
+               </children>
+            </HBox>
+<!--
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+ -->
+            <SplitPane fx:id="drawPane" dividerPositions="0.7430972388955582" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+              <items>
+                <AnchorPane fx:id="anchorP" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
