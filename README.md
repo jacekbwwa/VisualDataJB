@@ -1,7 +1,7 @@
 # VisualDataJB
-# Data Structure Visualization and Algorithm Animation in Java, author: Jacek Byzdra, email: jacekbwwa@gmail.com
+## Data Structure Visualization and Algorithm Animation in Java, author: Jacek Byzdra
 
-# Description
+## Description
 The project presents an interactive software application designed for visualization of commonly used data structures and algorithms.  
 The system displays data structures and algorithms graphically providing visualization and animation of the researched structure.   
 One of the application feature is animation of used algorithms.   
@@ -49,7 +49,7 @@ Following sorting algorithms  are presented in a graphical, visual, interactive,
 ## Fifth Part
 - The fifth part of the system was designed to provide interactive multiple questions/answers quiz based on algorithms and data structures.  System will evaluate user’s answers,  and in response will show correct answers and sum of received points. The list of the questions and answers is recorded in MySQL database.  
 
-![Screenshot](screenshot6.png)
+![Screenshot](screenshot7.png)
 
 ## Technologies Used
 - Java
@@ -66,12 +66,12 @@ Following sorting algorithms  are presented in a graphical, visual, interactive,
 - Clone the repository
 - Open the folder on IDE
 - Compile project
-- run  the scripts visualDataJB.sql  in MySQL
+- Run  the scripts visualDataJB.sql  in MySQL
 - Execute on IDE   
 
 **Running with self executing jar**
 
-- run the VisualDataJB-JacekByzdrax15030491.jar file
+- Run the VisualDataJB-JacekByzdrax15030491.jar file
 
 ### Author
 
