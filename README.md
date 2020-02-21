@@ -9,6 +9,7 @@ The tool implements interactive feature that allows user to change methods, and 
 Following data structures are  illustrated in  a graphical, visual, interactive, and animation way:    
 - Binary Search Tree   
 - Graphs  
+
 Following sorting algorithms  are presented in a graphical, visual, interactive, and animation way:  
 - Bubble Sort  
 - InsertionSort  
