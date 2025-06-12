@@ -1,16 +1,16 @@
-# VisualDataJB
+# VisualDataJB | Data Structure | Visualization | Algorithm Animation | Java
 ## Data Structure Visualization and Algorithm Animation in Java, author: Jacek Byzdra
 
 ## Description
-The project presents an interactive software application designed for visualization of commonly used data structures and algorithms.  
-The system displays data structures and algorithms graphically providing visualization and animation of the researched structure.   
-One of the application feature is animation of used algorithms.   
-The tool implements interactive feature that allows user to change methods, and data to trace, and compare efficiency of different algorithms, and show data structures.  
-Following data structures are  illustrated in  a graphical, visual, interactive, and animation way:    
+- The project presents an interactive software application designed for visualization of commonly used data structures and algorithms.  
+- The system displays data structures and algorithms graphically providing visualization and animation of the researched structure.   
+- One of the application feature is animation of used algorithms.   
+- The tool implements interactive feature that allows user to change methods, and data to trace, and compare efficiency of different algorithms, and show data structures.  
+### Following data structures are  illustrated in  a graphical, visual, interactive, and animation way:    
 - Binary Search Tree   
 - Graphs  
 
-Following sorting algorithms  are presented in a graphical, visual, interactive, and animation way:  
+### Following sorting algorithms  are presented in a graphical, visual, interactive, and animation way:  
 - Bubble Sort  
 - InsertionSort  
 - Selection Sort  
@@ -81,5 +81,5 @@ jacek.jaroslaw.byzdra@gmail.com
 [Linkedin](https://www.linkedin.com/in/jacek-byzdra/) - [GitHub](https://github.com/jacekbwwa)*
 
 ### License
-This work is available under a Creative Commons License Attribution - Non-Commercial Use - No Derivative Works 4.0 International
+Privacy policy. This work is available under a Creative Commons License Attribution - Non-Commercial Use - No Derivative Works 4.0 International
 [![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
